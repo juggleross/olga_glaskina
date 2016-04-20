@@ -1,0 +1,110 @@
+<% content_for :body_class, "section-exhibitions page-exhibitions site-responsive responsive-top-size-1023 responsive-nav-standard responsive-nav-side-position-left analytics-track-all-links page-param-current-forthcoming page-param-type-exhibition_id nopopups" %>
+<% content_for :title, "Projects | "%>
+<div id="main_content" class="clearwithin">
+            <!--contentstart-->
+            
+
+        
+<div id="exhibitions_nav" class="clearwithin">
+    <div class="inner clearwithin">
+        <div id="sub_nav" class="clearwithin navigation">
+            <div class="subnav_active_indicator"></div>
+            <div id="custom_sub_nav_reveal"></div>
+            <ul class="clearwithin">
+                
+
+                        
+                        <li class="active current" id="nav_current-forthcoming"><a href="<%=project_home_path %>">Current</a></li>
+                        
+            </ul>
+        </div>
+    </div>
+</div>
+
+    
+    
+    <div class="heading_wrapper">
+            <h1>Projects</h1>
+     
+        <div id="sub_nav_clear" class="clear"></div>
+    </div>
+    
+    <div id="content" class="exhibition-list-outer-container clearwithin">
+
+
+            
+
+
+    
+
+    <div id="exhibitions-grid-container" class="standard-entry-list">
+
+
+
+
+        
+     
+        
+
+        <div class="slick-exhibition-current" style="width:100%; margin: 0; padding: 0;" >
+                        
+        		<% @home_projects.each do |home_project| %>
+                        <div class="slick-item" style="margin:0 8px;" >
+                            <a href="<%=project_path(home_project.short_photo_type)%>">
+
+                                    <img src="/assets/shim.png" class="slideshow-img" data-lazy="<%=home_project.image_cloud%>" data-imgwidth="2000" data-imgheight="1398" alt="<%=home_project.title %>"/>
+
+                                <span class="content clearwithin">
+                                    <span class="inner clearwithin">
+                                        
+                                        <h2><span class="h1_title mesh-text">'<%=home_project.title %>'</span><br><span class="h1_subtitle mesh-text"><%=home_project.photo_type%></span></h2>
+                                            <span class="date mesh-text"><%=home_project.date %></span>
+                                    </span>
+                                </span>
+                            </a>
+                            <div class="slideshade"></div>
+                        </div>
+                 <% end %>       
+                   
+        </div>
+
+
+
+
+
+
+
+
+
+
+        
+        <div class="inner">
+            <div class="mobile-exhibition-list" style="width:100%; margin: 0; padding: 0;" >
+                        <% @home_projects.each do |home_project| %>   
+                            <div class="mobile-exhibition-list-item" >
+                                <a href="<%=project_path(home_project.short_photo_type)%>">
+                                    <img src="<%=home_project.image_cloud%>"  class="" data-lazy="" alt="<%=home_project.title %>"/>
+                                    <span class="content clearwithin">
+                                        <span class="inner clearwithin">
+                                            
+                                            <h2><span class="h1_title mesh-text">'<%=home_project.title %>'</span><br><span class="h1_subtitle mesh-text"><%=home_project.photo_type%></span></h2>
+                                                <span class="date mesh-text"><%=home_project.date %></span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        <% end %>
+                            
+                           
+            </div>
+        </div>
+
+
+     
+
+    </div>
+
+
+
+    </div>
+</div>

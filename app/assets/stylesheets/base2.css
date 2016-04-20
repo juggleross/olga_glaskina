@@ -1,0 +1,82 @@
+
+/* -----------------------------------------------------------
+    Load fonts
+----------------------------------------------------------- */
+
+
+/* -----------------------------------------------------------
+    Global Styles
+----------------------------------------------------------- */
+
+    body {
+        font-family: 'ProximaNova', Sans-Serif;
+        font-weight: 200;
+        color: #444545;
+        font-size: 12.5px;
+        line-height: 1.8em;
+        background: #fff;
+    }
+    ul {
+        line-height: 1.7em;
+    }
+    a,
+    a:visited,
+    a:hover,
+    .link_color,
+    .link_color:hover {
+        color: #444545;
+    }
+    h1, h2, h3, h4, h5, h6, .h1 {
+        font-family: 'ProximaNova', Sans-Serif;
+        font-weight: 200;
+        color: #202020;
+        margin: 0;
+    }
+    h1 a,h1 a:visited,
+    h2 a, h2 a:visited,
+    h3 a, h3 a:visited,
+    h4 a, h4 a:visited,
+    h5 a, h5 a:visited,
+    h6 a, h6 a:visited,
+    .h1,
+    .h1 a{
+        color: #202020;
+        text-decoration: none;
+    }
+    h1, .h1 {
+        font-size: 38px;
+        line-height: 42px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin: 0 0 16px;
+        float: left;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 32px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+    }
+    h3 {
+        font-size: 15px;
+        line-height: 21px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+    }
+    h4 {
+        font-size: 13px;
+        line-height: 19px;
+    }
+    h5 {
+        font-size: 12px;
+    }
+    h6 {
+        font-size: 11px;
+    }
+
+    sup {
+        line-height: 13px;
+    }

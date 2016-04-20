@@ -1,0 +1,1481 @@
+/* ------------------------------------------------------------------------
+---------- General styles to make the site responsive friendly ------------
+------------------------------------------------------------------------ */
+
+
+
+/*Make viewport behave normally on Microsoft Surface*/
+@-ms-viewport {width: device-width;}
+
+
+
+
+/* ------------------------------------------------------------------------
+--------------------------------- Size 3 ----------------------------------
+------------------------------------------------------------------------ */
+
+@media screen and (max-width: 1280px) {
+
+
+    /* -----------------------------------------------------------
+       Generic
+    ----------------------------------------------------------- */
+
+
+
+    /* -----------------------------------------------------------
+       General layout
+    ----------------------------------------------------------- */
+
+    /* On most pages*/
+    #content_module {
+        width: 60%;
+    }
+    #sidebar {
+        width: 34%;
+    }
+
+    .footer-column {
+        padding-right:40px;
+    }
+
+    /*Standard left/right detail pages*/
+    
+    .section-news #sidebar,
+    .subsection-store-record #sidebar,
+    .default-cascading #content_module{
+        width: 50%;        
+    }
+
+    .section-news #content_module,
+    .subsection-store-record #content_module,
+    .default-cascading #sidebar,
+    .subsection-store-record .title-wrapper,
+    .section-news .subsection-news-record .title-wrapper{
+        width: 42%;
+    }
+
+    /* -----------------------------------------------------------
+        Global classes
+    ----------------------------------------------------------- */
+
+    
+    
+    /*Accordian lists -----------------------------*/
+    .records_list ul li.accordion_active .content,
+    .detail_list ul li.accordion_active .content {
+        width: 35%;
+    }
+
+
+    .records_list ul li.accordion_active .image,
+    .detail_list ul li.accordion_active .image,
+    #mobile_artist_list .detail_list ul li .image,
+    .page-search .detail_list .image,
+    .section-artists .subsection-press .detail_list .image,
+    .section-artists .subsection-exhibitions .detail_list .image,
+    .section-artists .subsection-news .feature_list .image{
+        width:55%;
+        overflow: hidden;
+    }
+
+
+    /*list slideshows*/
+ 
+
+
+    /*News accordian lists --------*/
+     /*
+    .page-artists .subsection-news .records_list ul li.accordion_active .content,
+    .page-artists .subsection-news .detail_list ul li.accordion_active .content,
+    .page-artists .subsection-news .feature_list ul li.accordion_active .content,
+    .page-news .subsection-news-grid .detail_list ul li.accordion_active .content,
+    .page-news .subsection-news-grid .detail_list ul li.accordion_active .content {
+        width: 50%;
+    }
+    .page-news .subsection-news-grid .detail_list ul li .image span,
+    .page-artists .subsection-news .detail_list ul li .image span,
+    .section-artists .subsection-press .detail_list .image span{
+        width: 100%;
+    }
+    .page-news .subsection-news-grid .detail_list ul li .image,
+    .page-artists .subsection-news .detail_list ul li .image,
+    .page-artists .subsection-news .feature_list ul li .image{
+        width: 40%;
+        height: auto;
+    }*/
+    .page-news .detail_list .image img,
+    .section-artists .subsection-news .detail_list .image img,
+    .page-search .detail_list .image img,
+    .page-store .detail_list .image img,
+    .section-artists .subsection-press .detail_list .image img,
+    .page-exhibitions .detail_list .image img,
+    .section-artists .subsection-exhibitions .detail_list .image img{
+        max-width:100%;
+        max-height:100%;
+    }
+
+
+    /* -----------------------------------------------------------
+       Page Specific
+    ----------------------------------------------------------- */
+
+
+
+    /*Artist List -------------------*/
+
+    .subsection-artist-list-preview-letters #content_module {
+        width:19%;
+    }
+    .subsection-artist-list-preview-letters #sidebar {
+        width:74%;
+    }
+    .subsection-artist-list-preview-letters #content_module .artist-list-wrapper {
+        width:100%;
+    }
+    #mobile_artist_list .detail_list ul li.accordion_active .content {
+        width:40%;
+    }
+
+
+    /*Store -------------------*/
+
+    .page-store .detail_list .image,
+    .page-store .detail_list .image span,
+    .section-store .feature_list ul li .image span {
+        width:100% !important;
+     }
+
+
+
+     /*Contact -------------------*/
+
+}
+
+
+
+/* ------------------------------------------------------------------------
+--------------------------------- Size 3 ----------------------------------
+------------------------------------------------------------------------ */
+
+@media screen and (max-width: 1023px) {
+
+
+    /* -----------------------------------------------------------
+       Generic
+    ----------------------------------------------------------- */
+
+    .section-home #homepage-panels .content .h1_title,
+    .section-home #homepage-panels .content .h1_subtitle,
+    .section-home #homepage-panels .content .h1_title span,
+    .section-home #homepage-panels .content .h1_subtitle span,
+    .section-home #homepage-panels .content h2,
+    .page-param-current-forthcoming .slick-exhibition-current .content .h1_title,
+    .page-param-current-forthcoming .slick-exhibition-current .content .h1_subtitle,
+    .page-param-current-forthcoming .slick-exhibition-current .content .h1_title span,
+    .page-param-current-forthcoming .slick-exhibition-current .content .h1_subtitle span,
+    .page-param-current-forthcoming .single-exhibition-current .content .h1_title,
+    .page-param-current-forthcoming .single-exhibition-current .content .h1_subtitle,
+    .page-param-current-forthcoming .single-exhibition-current .content .h1_title span,
+    .page-param-current-forthcoming .single-exhibition-current .content .h1_subtitle span,
+    .section-about .video-caption,
+    .mobile-exhibition-list-item .content .h1_title,
+    .mobile-exhibition-list-item .content .h1_subtitle{
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+
+    
+    
+ 
+    /*---------Small tiles--------*/
+    .store-landing-page .feature_panels.layout_option_3 .store_panel_heading,
+    .store-landing-page .feature_panels.layout_option_2 .store_panel_heading,
+    .store-landing-page .feature_panels.layout_option_1 .store_panel_heading {
+        font-size: 22px;
+        line-height: 24px;
+    }
+    /*---------Large tiles--------*/
+    .store-landing-page .feature_panels.layout_option_3 .panel_number_2 .store_panel_heading,
+    .store-landing-page .feature_panels.layout_option_1 .panel_number_3 .store_panel_heading {
+        
+    }
+
+
+
+
+    .section-home #homepage-panels .content .date,
+    .page-param-current-forthcoming .slick-exhibition-current .content .date,
+    .section-home #homepage-panels .content .custom_text,
+    .mobile-exhibition-list-item .content .date{
+        font-size: 19px;
+        line-height: 42px;
+        letter-spacing: 1.3px;
+    }
+    .section-exhibitions .subsection-exhibition-detail-page .exhibition-header .date {
+        font-size: 15px;
+    }
+
+    .footer-left .footer-column {
+        padding-right: 30px;
+        width:33.333%;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .footer-left {
+        float: left;
+        width: 80%;
+    }
+    .footer-right {
+        float: right;
+        width: 20%;
+    }
+
+    #main_content {
+        margin: 0 0 45px!important;
+    }
+
+    /* -----------------------------------------------------------
+       General layout
+    ----------------------------------------------------------- */
+    
+    #main_content {
+        width: auto !important;
+        margin: 0 0 20px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #content_module .description,
+    #content_module #bio,
+    #content_module .column_text {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-gap: 0;
+        -moz-column-gap: 0;
+        column-gap: 0;
+        text-align: justify;
+    }
+
+    /* -----------------------------------------------------------
+        Global classes
+    ----------------------------------------------------------- */
+
+
+    .feature_list ul li .image,
+    .feature_list ul li .image span,
+    .page-exhibitions .detail_list .image,
+    .page-exhibitions .detail_list .image span,
+    #mobile_artist_list .detail_list ul li .image,
+    #mobile_artist_list .detail_list ul li .image span,
+    .page-search .detail_list .image,
+    .page-search .detail_list .image span,
+    .section-artists .subsection-press .detail_list .image,
+    .section-artists .subsection-press .detail_list .image span,
+    .page-news .subsection-news-grid .detail_list ul li .image span,
+    .page-artists .subsection-news .feature_list ul li .image span,
+    .page-news .detail_list .image, .page-news .detail_list .image span,
+    .section-artists .subsection-exhibitions .detail_list .image,
+    .section-artists .subsection-exhibitions .detail_list .image span{
+        height: 360px;
+    }
+
+
+    /* -----------------------------------------------------------
+        Typography scaling
+    ----------------------------------------------------------- */
+    h1, .h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .records_list ul li h2,
+    .records_list ul li .subtitle {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .detail_list ul li,
+    .feature_list ul li {
+        padding: 25px 0 19px 0;
+    }
+
+
+    /* -----------------------------------------------------------
+       Page Specific
+    ----------------------------------------------------------- */
+
+    .section-news.page-news #main_content {
+        margin: 0;
+        margin-bottom: 0 !important;
+    }
+
+    .page-artists .subsection-artist-list-preview-letters {
+        display: none!important;
+    }
+    #mobile_artist_list{
+        display: block;
+    }
+    .ps-row-link {
+        font-size: 12px;
+        line-height: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1.4px;
+        display: block;
+        margin-top: 9px;
+        margin-bottom: 5px;
+    }
+    /*News -------------------*/
+    .subsection-news-record #detail-slideshow,
+    .subsection-news-record #detail-slideshow .item,
+    .subsection-news-record #detail-slideshow .item span,
+    .subsection-news-record #detail-slideshow .item span a{
+        height: 400px;
+    }
+    .subsection-news-record #detail-slideshow .item span a{
+        display:inline;
+    }
+
+    /*Store -------------------*/
+
+    .section-store .detail_list ul li {
+        width: 33.3%;
+    }
+    .ps-row-content {
+        padding-top: 5px;
+    }
+    .ps-row-header {
+        font-size: 17px;
+        line-height: 18px;
+    }
+    .section-store .store_item_controls {
+      float: left;
+      clear: both;
+      width: 100%;
+    }
+    .section-store .subsection-store-artworks-record .store_item .variant {
+        max-width:50%;
+    }
+    .section-store .store_item .price {
+        float: right;
+    }
+
+    /*Contact -------------------*/
+    .section-contact.page-contact #content_module, .contact-form-wrapper {
+        width:100%;
+        clear:both;
+        float:none;
+    }
+    .store_item_remove_container {
+        clear: none;
+        float: right;
+    }
+    #map_basic {
+        height: 568px;
+    }
+
+
+}
+
+
+/* ------------------------------------------------------------------------
+---------------------------- Custom size ----------------------------------
+------------------------------------------------------------------------ */
+
+
+@media screen and (max-width: 900px) {
+
+
+     #header,
+     #header.header_fixed{
+        margin-bottom:30px;
+        height:auto;
+        z-index: 999;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right:0;
+        padding-top: 0;
+         -moz-transition: background-color 0.2s ease-in;
+        -webkit-transition: background-color 0.2s ease-in;
+        -o-transition: background-color 0.2s ease-in;
+        transition: background-color 0.2s ease-in;
+        padding: 0;
+        /*background-color: #FBFBFB;*/
+    }
+        #header .inner {
+            padding: 15px 0 0 15px;
+            position:relative;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+    #top_nav.navigation{
+        position:static;
+        width: auto;
+        float: none;
+        margin-right: -10px;
+        padding-top: 40px;
+
+    }
+    .topnav,
+    .search-activate {
+         display:none;
+    }
+    #top_nav.navigation ul {
+        padding: 60px 0 0 0;
+        float: none;
+        clear: both;
+    }
+
+    #custom_top_nav_reveal {
+        display:block;
+    }
+
+    #top_nav.navigation ul li {
+        float: none;
+        display: inline-block;
+        width: 33.3%;
+        vertical-align: top;
+        margin: 0;
+        margin-right: -4px;
+        padding-right:8px;
+        height: 48px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    #top_nav.navigation ul li a{
+        border-top: 1px solid #CFCFCF;
+        width: 100%;
+    }
+
+    .page-param-current-forthcoming .slick-exhibition-current .content .h1_title,
+    .page-param-current-forthcoming .slick-exhibition-current .content .h1_subtitle,
+    .page-param-current-forthcoming .slick-exhibition-current .content .h1_title span,
+    .page-param-current-forthcoming .slick-exhibition-current .content .h1_subtitle span,
+    .page-param-current-forthcoming .single-exhibition-current .content .h1_title,
+    .page-param-current-forthcoming .single-exhibition-current .content .h1_subtitle,
+    .page-param-current-forthcoming .single-exhibition-current .content .h1_title span,
+    .page-param-current-forthcoming .single-exhibition-current .content .h1_subtitle span{
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------
+--------------------------------- Size 2 ----------------------------------
+------------------------------------------------------------------------ */
+
+
+@media screen and (max-width: 767px) {
+
+
+    /* -----------------------------------------------------------
+       Generic
+    ----------------------------------------------------------- */
+
+    .artwork_popup_wrapper .fancybox-title {
+        display:none !important;
+    }
+
+
+    /*
+       Typography
+    ----------------------------------------------------------- */
+    h1, .h1 {
+        font-size: 33px;
+        line-height: 38px;
+    }
+    .records_list ul li .date, .press-publication {
+        margin: 0;
+        font-size: 14px;
+    }
+    .exhibition-archive-preview-reveal,
+    .full-archive-link,
+    .full-archive-link a {
+        font-size:12px;
+    }
+    .exhibition-quote, .artist-quote {
+        display: block;
+        width: 100%;
+        float: none;
+        font-size: 18.5px;
+        line-height: 30px;
+        padding-bottom: 20px;
+    }
+
+    #sub_nav {
+        margin: 0 0 8px;
+        padding-top: 14px;
+    }
+    .subsection-store-record .title-wrapper h1 {
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 7px;
+    }
+
+    .slick-caption-wrapper,
+    .artist-video-wrapper {
+        margin-bottom: 20px;
+    }
+    .slick-prev, .slick-next {
+        display:none !important;
+    }
+    
+    .default-cascading #content_module,
+    .default-cascading #sidebar,
+    .section-news #content_module,
+    .subsection-store-record #content_module,
+    .default-cascading #sidebar,
+    .subsection-store-record .title-wrapper,
+    .section-news .subsection-news-record .title-wrapper{
+        width:100%;
+        display:block;
+        clear:both;
+    }
+
+    .section-home #homepage-panels .content .h1_title,
+    .section-home #homepage-panels .content .h1_subtitle,
+    .section-home #homepage-panels .content .h1_title span,
+    .section-home #homepage-panels .content .h1_subtitle span,
+    .section-home #homepage-panels .content h2,
+    .page-param-current-forthcoming .slick-exhibition-current .content .h1_title,
+    .page-param-current-forthcoming .slick-exhibition-current .content .h1_subtitle,
+    .page-param-current-forthcoming .slick-exhibition-current .content .h1_title span,
+    .page-param-current-forthcoming .slick-exhibition-current .content .h1_subtitle span,,
+    .page-param-current-forthcoming .single-exhibition-current .content .h1_title,
+    .page-param-current-forthcoming .single-exhibition-current .content .h1_subtitle,
+    .page-param-current-forthcoming .single-exhibition-current .content .h1_title span,
+    .page-param-current-forthcoming .single-exhibition-current .content .h1_subtitle span,
+    .section-about .video-caption,
+    .mobile-exhibition-list-item .content .h1_title,
+    .mobile-exhibition-list-item .content .h1_subtitle{
+        font-size: 45px;
+        line-height: 54px;
+    }
+    .section-home #homepage-panels .content .date,
+    .page-param-current-forthcoming .slick-exhibition-current .content .date,
+    .section-home #homepage-panels .content .custom_text,
+    .mobile-exhibition-list-item .content .date {
+        font-size: 17px;
+        line-height: 38px;
+        letter-spacing: 1.2px;
+    }
+    
+ 
+    /*---------Small tiles--------*/
+    .store-landing-page .feature_panels.layout_option_3 .store_panel_heading{
+
+    }
+    /*---------Large tiles--------*/
+    .store-landing-page .feature_panels.layout_option_3 .panel_number_2 .store_panel_heading {
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+
+
+    .store-landing-page .feature_panels.layout_option_1 .store_panel_heading,
+    .store-landing-page .feature_panels.layout_option_1 .panel_number_3 .store_panel_heading{
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+
+    .store-landing-page .featured-list-header a.featured-section-link {
+        float: left;
+        clear: both;
+        margin-top: 13px;
+        padding-bottom: 20px;
+    }
+    .store-landing-page .featured-list-header h3 {
+        font-size: 17px;
+        float: left;
+    }
+
+
+    /* -----------------------------------------------------------
+       General layout
+    ----------------------------------------------------------- */
+    #sidebar,
+    #content_module,
+    .section-news #sidebar,
+    .subsection-store-record #sidebar,
+    .default-cascading #content_module,
+    .subsection-store-record .title-wrapper,
+    .subsection-store-record #content_module,
+    .default-cascading #sidebar,
+    .section-news.page-news #content_module{
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .subsection-store-record .title-wrapper {
+        border-bottom: 0;
+        padding: 30px 0 0 0;
+        margin-bottom: 0;
+        float: none;
+    }
+
+    .subsection-store-products-record .image {
+        margin-bottom:20px;
+    }
+
+
+
+    /*
+    Accordian lists--------------------*/
+
+    .feature_list ul li .image,
+    .feature_list ul li .image span,
+    .page-exhibitions .detail_list .image,
+    .page-exhibitions .detail_list .image span,
+    #mobile_artist_list .detail_list ul li .image,
+    #mobile_artist_list .detail_list ul li .image span,
+    .page-search .detail_list .image,
+    .page-search .detail_list .image span,
+    .section-artists .subsection-press .detail_list .image,
+    .section-artists .subsection-press .detail_list .image span,
+    .page-news .subsection-news-grid .detail_list ul li .image span,
+    .page-artists .subsection-news .feature_list ul li .image,
+    .page-artists .subsection-news .feature_list ul li .image span,
+    .page-news .detail_list .image,
+    .page-news .detail_list .image span,
+    .section-artists .subsection-exhibitions .detail_list .image,
+    .section-artists .subsection-exhibitions .detail_list .image span{
+        height: 300px;
+    }
+    .accordion_list .records_list ul li.accordion_active {
+        cursor: auto;
+        padding: 38px 0;
+    }
+    .records_list ul li h2,
+    .records_list ul li .subtitle {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .detail_list ul li,
+    .feature_list ul li {
+        padding: 23px 0 15px 0;
+    }
+
+    .page-exhibitions .detail_list .image img,
+    .section-artists .subsection-exhibitions .detail_list .image img{
+        max-width: 100%;
+        max-height: 300px;
+    }
+
+
+
+
+
+
+
+
+    /*
+    Footer--------------------*/
+
+    .footer-left .footer-column {
+        width:50%;
+    }
+
+    /* -----------------------------------------------------------
+        Global classes
+    ----------------------------------------------------------- */
+
+    .mini_panels ul li.panels {
+        margin-bottom: 15px;
+        display: inline-block;
+        width: 50%;
+        margin-right: -2px;
+    }
+
+    /* -----------------------------------------------------------
+       Page Specific
+    ----------------------------------------------------------- */
+
+     /*  Home
+    ----------------------------------------------------------- */
+    .home-down-arrow {
+        font-size: 44px;
+        bottom: 4%;
+    }
+
+     /* Exhibitions
+    ----------------------------------------------------------- */
+    .mobile-exhibition-list,
+    .mobile-exhibition-list img,
+    .mobile-exhibition-list .content{
+        display:block;
+        visibility:visible;
+    }
+    .slick-exhibition-current,
+    .single-exhibition-current{
+        display:none !important;
+        visibility:hidden;
+    }
+    .mobile-exhibition-list-item {
+        display: block;
+        width: 100%;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .mobile-exhibition-list-item .content {
+        padding-top:30px;
+    }
+
+
+    /*  Store
+    ----------------------------------------------------------- */
+    .store-landing-page .feature_panels .records_list ul li,
+    .store-landing-page .feature_panels .records_list ul li.panel_standard {
+        width: 33.333%;
+        margin: 0 0 14px 0;
+        padding: 0 14px 0 0;
+    }
+    .ss-panel-wrapper,
+    .section-store .feature_panels .records_list {
+        margin-right: -14px;
+    }
+    .store-landing-page .feature_panels.layout_option_1 .records_list ul li.panel_number_3,
+    .store-landing-page .feature_panels.layout_option_1 .records_list ul li.panel_standard.panel_number_3 {
+        width: 33.3333%;
+        float: none;
+    }
+    .store-landing-page .feature_panels.layout_option_1 .records_list ul li.panel_number_4,
+    .store-landing-page .feature_panels.layout_option_1 .records_list ul li.panel_standard.panel_number_4 {
+        width: 100%;
+    }
+    .store-landing-page .feature_panels.layout_option_3 .records_list ul li.panel_number_2,
+    .store-landing-page .feature_panels.layout_option_3 .records_list ul li.panel_standard.panel_number_2 {
+        width: 100%;
+        float: right;
+    }
+
+    .store-landing-page .feature_panels.layout_option_3 .records_list ul li,
+    .store-landing-page .feature_panels.layout_option_3 .records_list ul li.panel_standard {
+        width: 50%;
+    }
+
+    .ss-panel {
+        padding: 0 14px 0 0;
+        width: 50%;
+    }
+    .ss-panel.panel-selector {
+        width: 100%;
+    }
+    .store-landing-page .feature-article {
+        padding-top: 40px;
+    }
+    .store-landing-page .article-image,
+    .store-landing-page .article-content,
+    .article-header{
+        width: 100%;
+        float: none;
+        clear: both;
+    }
+    .article-header{
+        padding-top: 0;
+    }
+    .store-landing-page .article-header h2 {
+        font-size: 35px;
+        line-height: 40px;
+        margin-bottom: 28px;
+    }
+    .store-landing-page .article-header h3 {
+        font-size: 17px;
+        line-height: 19px;
+        margin-bottom: 15px;
+    }
+
+    .section-store .store_item_controls {
+        float:right;
+        clear:none;
+    }
+    .section-store .store_item .price {
+
+    }
+    /*  News
+    ----------------------------------------------------------- */
+    .twitter_feed .tweet-text{
+        font-weight: 600;
+        letter-spacing: 1.2px;
+        font-size: 15px;
+        max-width: 80%;
+        line-height: 26px;
+    }
+    .section-about .video-wrapper {
+        margin-bottom: 0;
+    }
+
+    .instafeed-wrapper .instafeed-fill {
+        margin-top: 75%;
+    }
+
+    .section-news #instafeed .instagram-tile {
+        width: 25%;
+    }
+    .section-news #instafeed .instagram-tile.big {
+        display: inline-block;
+        width: 50%;
+        float: left;
+    }
+
+
+
+    /* Contact
+    ----------------------------------------------------------- */
+    .section-contact .content_module_wrapper,.section-contact.page-contact #content_module, .section-contact.page-contact .content_module_wrapper, .contact-form-wrapper {
+        width: 100%;
+        float: none;
+    }
+    .contact-form-wrapper {
+        border-bottom: 1px solid #E1E1E1;
+        padding-bottom: 50px;
+        margin-bottom: 32px;
+    }
+    #map_basic {
+        height: 424px;
+    }
+  
+
+
+
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------
+--------------------------------- Size 1 ----------------------------------
+------------------------------------------------------------------------ */
+
+
+@media screen and (max-width: 520px) {
+
+    /* -----------------------------------------------------------
+       Generic
+    ----------------------------------------------------------- */
+    .section-home #header, .section-home #header.header_fixed.page-scroll {
+        min-height:60px;
+    }
+    .section-home #custom_top_nav_reveal {
+        top: 20px;
+    }
+    #logo {
+        font-size: 16px;
+        margin: 24px 0 0 0;
+        font-size: 14.5px;
+        letter-spacing: 2.1px;
+    }
+    .section-home #logo, .section-home #header.header_fixed.page-scroll #logo {
+        margin-top: 24px;
+        font-size: 16px;
+        letter-spacing: 2.5px;
+    }
+    .section-home #homepage-panels .content .h1_title,
+    .section-home #homepage-panels .content .h1_subtitle,
+    .section-home #homepage-panels .content .h1_title span,
+    .section-home #homepage-panels .content .h1_subtitle span,
+    .section-home #homepage-panels .content h2,
+    .page-param-current-forthcoming .slick-exhibition-current .content .h1_title,
+    .page-param-current-forthcoming .slick-exhibition-current .content .h1_subtitle,
+    .page-param-current-forthcoming .slick-exhibition-current .content .h1_title span,
+    .page-param-current-forthcoming .slick-exhibition-current .content .h1_subtitle span,
+    .page-param-current-forthcoming .single-exhibition-current .content .h1_title,
+    .page-param-current-forthcoming .single-exhibition-current .content .h1_subtitle,
+    .page-param-current-forthcoming .single-exhibition-current .content .h1_title span,
+    .page-param-current-forthcoming .single-exhibition-current .content .h1_subtitle span,
+    .section-about .video-caption,
+    .mobile-exhibition-list-item .content .h1_title,
+    .mobile-exhibition-list-item .content .h1_subtitle{
+        font-size: 33px;
+        line-height: 42px;
+    }
+
+    .section-home #homepage-panels .content .date,
+    .page-param-current-forthcoming .slick-exhibition-current .content .date,
+    .section-home #homepage-panels .content .custom_text,
+    .mobile-exhibition-list-item .content .date {
+        font-size: 15px;
+        line-height: 31px;
+    }
+
+
+
+    /*---------Small tiles--------*/
+    .store-landing-page .feature_panels.layout_option_3 .store_panel_heading,
+    .store-landing-page .feature_panels.layout_option_2 .store_panel_heading,
+    .store-landing-page .feature_panels.layout_option_1 .store_panel_heading,
+    .store-landing-page .feature_panels.layout_option_1 .panel_number_3 .store_panel_heading{
+        font-size: 17px;
+        line-height: 22px;
+    }
+    /*---------Large tiles--------*/
+    .store-landing-page .feature_panels.layout_option_3 .panel_number_2 .store_panel_heading{
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+
+
+
+
+
+
+
+    .section-exhibitions .subsection-exhibition-detail-page .exhibition-header .date {
+        font-size: 14px;
+    }
+
+    #container, .section-artists.page-param-overview #container,
+    .section-artists.page-param-exhibitions #container,
+    .section-artists.page-param-press #container,
+    .section-artists.page-param-news #container,
+    .section-artists.page-param-video #container,
+    .section-about #container {
+        padding: 110px 0 0 0;
+    }
+    .subsection-exhibition-detail-page.subsection-wrapper-overview {
+        margin-top: 34px;
+    }
+
+
+
+    /*----INNER CONTAINERS----*/
+    .inner,
+    .heading_wrapper,
+    .section-heading-wrapper,
+    #exhibitions-grid-past,
+    #exhibitions-grid-online,
+    #exhibitions-grid-external,
+    #exhibitions_nav,
+    .subsection-artist-list-preview-letters,
+    .subsection-exhibitions,
+    .subsection-press,
+    .subsection-news,
+    .subsection-store-grid-artworks,
+    .subsection-store-grid-publications,
+    .subsection-store-record #content,
+    body.type-fullscreen #header .inner,
+    .news-grid-wrapper,
+    .subsection-store-basket,
+    .subsection-store-grid-products,
+    #store_cart_widget,
+    .searchresults_rows,
+    #header.header_fixed .inner{
+        padding: 0 10px;
+    }
+
+
+    /* -----------------------------------------------------------
+       General layout
+    ----------------------------------------------------------- */
+
+    .slick-artwork-enlarge {
+        display: none;
+    }
+
+
+    /*   Lists
+    ----------------------------------------------------------- */
+    .records_list ul li .date, .press-publication {
+        margin: 0;
+        font-size: 12.5px;
+    }
+    .section-exhibitions .subsection-exhibition-detail-page .exhibition-header .date {
+        font-size: 12.5px;
+    }
+    
+    .records_list ul li h2,
+    .records_list ul li .subtitle {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .records_list ul li.accordion_active .image,
+    .detail_list ul li.accordion_active .image,
+    #mobile_artist_list .detail_list ul li .image {
+        width: 100%;
+        /*margin-top: 45px;*/
+        margin-bottom: 20px;
+    }
+
+    .subsection-exhibitions-grid.accordion_list ul li.accordion_active .image,
+    .subsection-exhibitions.accordion_list ul li.accordion_active .image {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+
+    .records_list ul li.accordion_active .content,
+    .detail_list ul li.accordion_active .content,
+    #mobile_artist_list .detail_list ul li.accordion_active .content{
+        width:100%;
+    }
+    .detail_list ul li,
+    .feature_list ul li {
+        padding: 18px 0 12px 0;
+        position:relative;
+    }
+    .feature_list ul li .image,
+    .feature_list ul li .image span,
+    .page-exhibitions .detail_list .image,
+    .page-exhibitions .detail_list .image span,
+    #mobile_artist_list .detail_list ul li .image,
+    #mobile_artist_list .detail_list ul li .image span,
+    .page-news .subsection-news-grid .detail_list ul li .image span{
+        /*height: auto;*/
+    }
+    
+    .feature_list ul li .image.slides,
+    .feature_list ul li .image.slides span,
+    .page-exhibitions .detail_list .image.slides,
+    .page-exhibitions .detail_list .image.slides span,
+    #mobile_artist_list .detail_list ul li .image.slides,
+    #mobile_artist_list .detail_list ul li .image.slides span,
+    .section-artists .subsection-exhibitions .detail_list .image,
+    .section-artists .subsection-exhibitions .detail_list .image span{
+        height:200px;
+    }
+
+
+    .page-news .detail_list .image img,
+    .section-artists .subsection-news .detail_list .image img,
+    .page-search .detail_list .image img, .page-store .detail_list .image img,
+    .section-artists .subsection-press .detail_list .image img,
+    .page-exhibitions .detail_list .image img,
+    .section-artists .subsection-exhibitions .detail_list .image img{
+        max-width: 100%;
+        max-height: 300px;
+    }
+
+
+    /*
+    #mobile_artist_list ul li.accordion_active h2 {
+        margin: 0 0 20px 0;
+        position: absolute;
+        top: 27px;
+    }
+    */
+    .accordion_list .records_list ul li.accordion_active {
+        cursor: auto;
+        padding: 27px 0;
+    }
+
+
+    .mini_panels ul li.panels {
+        margin-bottom: 15px;
+        display: inline-block;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    /* -----------------------------------------------------------
+        Global classes
+    ----------------------------------------------------------- */
+
+
+
+    /*
+        Typography
+    ----------------------------------------------------------- */
+    h1, .h1, .store-header h1, .subsection-news-record #h1_wrapper .h1 {
+        font-size: 25px;
+        line-height: 32px;
+        letter-spacing: 1.5px;
+        margin: 0 0 5px;
+    }
+    .subsection-store-record .title-wrapper h1 {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 3px;
+    }
+    .single-share-wrapper {
+        padding-top: 7px;
+    }
+    .heading_wrapper{
+        position:relative;
+    }
+    .exhibition-quote, .artist-quote {
+        display: block;
+        width: 100%;
+        float: none;
+        font-size: 17px;
+        line-height: 26px;
+        padding-bottom: 18px;
+    }
+    .link span.read_more_label {
+        font-size: 12px;
+        letter-spacing: 1.2px;
+    }
+
+    .section-news .subsection-news-grid .subtitle,
+    .subsection-news .records_list .subtitle {
+        font-size: 12.5px;
+        line-height: 19px;
+        margin-bottom: 6px;
+    }
+
+
+
+    /*   Responsive Navs
+    ----------------------------------------------------------- */
+
+    #top_nav.navigation ul li {
+        width:100%;
+    }
+
+    #custom_top_nav_reveal {
+        right: 10px;
+    }
+    #sub_nav {
+        margin: 0;
+        float: none;
+        padding-top: 0;
+    }
+
+    #sub_nav ul{
+        margin: 0 -10px 15px 0;
+        float: none;
+        padding-top: 15px;
+        clear:both;
+        display:none;
+    }
+    #sub_nav.navigation ul li,
+    #exhibitions_nav .inner #sub_nav ul li,
+    .subsection-artists-list #sub_nav.navigation ul li{
+        margin: 0 -3px 8px 0;
+        width: 50%;
+        float: none;
+        display: inline-block;
+        padding-right: 10px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+     #sub_nav.navigation ul li a {
+        border-top: 1px solid #E1E1E1;
+        padding-top: 5px;
+        width:100%;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    #sub_nav.navigation ul li.active a,
+    #sub_nav.navigation ul li.active a:visited,
+    #sub_nav.navigation ul li.active a:hover {
+        color: #202020;
+        background-image: none;
+        background-repeat: repeat;
+        padding: 0;
+        border-top: 1px solid #646464 !important;
+    }
+    #custom_sub_nav_reveal {
+        color: #A9A9A9;
+        float: left;
+        font-size:14px;
+        cursor:pointer;
+        background-image: image-url('subnav_menu_icon.png');
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        background-position: center center;
+    }
+    .subsection-artists-list #custom_sub_nav_reveal {
+        float:left;
+    }
+    .subnav_active_indicator {
+        display:block;
+    }
+    #exhibitions_nav .inner #sub_nav {
+        float:none;
+    }
+
+    .subnav_active_indicator {
+        height: 20px;
+        line-height: 16px;
+        color: #A9A9A9;
+        text-transform: uppercase;
+        letter-spacing: 1.1px;
+        font-size: 10px;
+        float: left;
+        padding-top: 3px;
+        cursor:pointer;
+    }
+    .subsection-exhibition-detail-page #exhibitions_nav {
+        display:none;
+    }
+    .subnav-reveal-wrapper{
+        float: right;
+        padding-top: 6px;
+    }
+    .subsection-exhibition-detail-page .subnav-reveal-wrapper{
+        padding-top: 0;
+    }
+
+    .subsection-artists-list .subnav-reveal-wrapper{
+        float: left;
+    }
+    .section-exhibitions .subsection-exhibition-detail-page .exhibition-header #sub_nav {
+        margin:0;
+    }
+    .sub-item-share {
+        display:none !important;
+    }
+
+
+    .link.share_link a {
+        background-position: 8px -38px;
+        text-indent: -9999px;
+        padding: 5px 0 5px 0;
+        width: 25px;
+        height: 20px;
+    }
+    .slick-caption-wrapper,
+    .artist-video-wrapper {
+        margin-bottom: 0px;
+    }
+
+
+
+    .footer-right,
+    .footer-left,
+    .footer-column,
+    .footer-column.right,
+    .footer-left .footer-column {
+        width: 100%;
+        display: block;
+        margin-right: 0;
+        padding-top: 10px;
+        float:none;
+        clear:both;
+    }
+
+    #footer #social_links {
+        float: left;
+    }
+    #footer #social_links .social_links_item {
+        margin: 0 8px 0 0;
+    }
+    #social_links .social_links_item a {
+        text-align: left;
+    }
+    #footer #artlogic {
+        display: block;
+        clear: both;
+        text-align: left;
+    }
+
+
+    /* -----------------------------------------------------------
+       Page Specific
+    ----------------------------------------------------------- */
+
+
+
+    /* Home
+    ----------------------------------------------------------- */
+    .section-home #slideshow_pager {
+        display:none !important;
+    }
+    .section-home #fullpage .slidesection:after {
+        display:none;
+    }
+
+    /* News
+    ----------------------------------------------------------- */
+
+    .page-news .subsection-news-grid .detail_list ul li .image,
+    .page-artists .subsection-news .detail_list ul li .image,
+    .page-artists .subsection-news .feature_list ul li .image,
+    .section-artists .subsection-press .detail_list .image{
+        width: 100%;
+        float: none;
+
+    }
+    .section-news #content_module {
+        padding-top: 15px;
+    }
+
+    .page-artists .subsection-news .records_list ul li.accordion_active .content,
+    .page-artists .subsection-news .detail_list ul li.accordion_active .content,
+    .page-artists .subsection-news .feature_list ul li.accordion_active .content,
+    .page-news .subsection-news-grid .detail_list ul li.accordion_active .content,
+    .page-news .subsection-news-grid .detail_list ul li.accordion_active .content {
+        width: 100%;
+        float: none;
+    }
+    .twitter_feed .tweet-text {
+        letter-spacing: 1px;
+        font-size: 12px;
+        line-height: 23px;
+    }
+
+
+
+    /* Store
+    ----------------------------------------------------------- */
+
+    .store-landing-page .feature_panels .records_list ul li .content .vert-align {
+        padding: 12px;
+    }
+    .store-landing-page .feature_panels .records_list ul li .content h2 {
+        font-size: 15px;
+    }
+    .store-landing-page .feature_panels .records_list ul li .content .subtitle {
+        font-size: 13px;
+    }
+    .store-landing-page #sub_nav ul {
+        display: block;
+        line-height: 0;
+        margin: 0 0 20px 0;
+    }
+
+    .store-landing-page #sub_nav.navigation ul li a {
+        border-top: 1px solid #E1E1E1;
+        padding-top: 9px;
+        width: 100%;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 16px;
+        line-height: 46px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1.4px;
+        display: block;
+        display: table-row;
+        width: 100%;
+        border-top: 1px solid #222;
+        border-bottom: 1px solid #222;
+        cursor: pointer;
+        margin: 0;
+        padding-bottom: 4px;
+        color: #444545;
+    }
+    .store-landing-page #sub_nav.navigation ul li {
+        margin: 0;
+        width: 100%;
+        float: none;
+        display: inline-block;
+        padding-right: 0;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        height: auto;
+        margin-bottom: -1px;
+        margin-top: 0;
+        padding: 0;
+        padding-bottom: 0;
+    }
+
+
+    .store-landing-page .feature_panels .records_list ul li,
+    .store-landing-page .feature_panels .records_list ul li.panel_standard {
+        width: 50%;
+        margin: 0 0 14px 0;
+        padding: 0 14px 0 0;
+    }
+    .ss-panel-wrapper,
+    .section-store .feature_panels .records_list {
+        margin-right: -14px;
+    }
+    .store-section-selector {
+        display:none!important;
+    }
+    .store-landing-page .feature_panels.layout_option_1 .records_list ul li.panel_number_4,
+    .store-landing-page .feature_panels.layout_option_1 .records_list ul li.panel_standard.panel_number_4,
+    .store-landing-page .feature_panels.layout_option_1 .records_list ul li.panel_number_3,
+    .store-landing-page .feature_panels.layout_option_1 .records_list ul li.panel_standard.panel_number_3{
+        width: 50%;
+    }
+    .store-landing-page .feature_panels.default_layout .records_list ul li.panel_number_3,
+    .store-landing-page .feature_panels.default_layout .records_list ul li.panel_standard.panel_number_3 {
+        width: 50%;
+        float: none;
+    }
+    .store-landing-page .feature_panels img.mobile-only {
+        display: block !important;
+    }
+    .store-landing-page .feature_panels img.wide {
+        display: none;
+    }
+    .store-landing-page .feature_panels.default_layout .records_list ul li.panel_number_4,
+    .store-landing-page .feature_panels.default_layout .records_list ul li.panel_standard.panel_number_4 {
+        width: 50%;
+    }
+    .ss-panel {
+        padding: 0 14px 0 0;
+    }
+    .store-landing-page .feature-article {
+        padding-top: 20px;
+    }
+    .section-store .feature_list ul li {
+        width: 100%;
+        margin: 0 0 25px 0;
+        padding: 0 20px 0 0;
+    }
+    .section-store .detail_list ul li {
+        width: 50%;
+        padding: 0 14px 0 0;
+        margin: 0 0 25px 0;
+    }
+    .section-store .detail_list ul li .image,
+    .section-store .feature_list ul li .image {
+        margin-bottom: 10px;
+    }
+    #product-slideshow-pager ul li {
+        padding-right: 8px;
+    }
+    .store_cart_widget_inner {
+        float: left;
+    }
+    .cart-wrapper {
+        top: 76px;
+    }
+
+    .section-store .store_item_controls {
+        float: left;
+    }
+
+    /* Popup --------------------------------- */
+    .instafeed-wrapper .instafeed-fill {
+        margin-top: 0;
+    }
+
+    .section-news #instafeed .instagram-tile {
+        width: 50%;
+    }
+    .section-news #instafeed .instagram-tile.big {
+        display: inline-block;
+        width: 50%;
+        float: left;
+    }
+    .section-news #instafeed {
+        line-height: 0;
+        position: static;
+    }
+
+
+}
+
+
