@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+
+	#Casein routes
+	namespace :casein do
+		resources :projects
+	end
+
   get 'homes/example'
   get 'homes/about', as: :about
   get 'homes/contact', as: :contact
