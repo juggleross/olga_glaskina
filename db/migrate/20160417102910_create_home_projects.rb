@@ -13,3 +13,6 @@ class CreateHomeProjects < ActiveRecord::Migration
     end
   end
 end
+# rails generate template for case in HomeProject
+# rails g casein:scaffold HomeProject photo_type_id:integer title:string 
+# photo_type:string short_photo_type:string date:string image_cloud:string image_cloud_thumb:string

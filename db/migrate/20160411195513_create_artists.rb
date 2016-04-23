@@ -9,3 +9,6 @@ class CreateArtists < ActiveRecord::Migration
     end
   end
 end
+
+# temllate for case in ARTIST
+# rails g casein:scaffold Artist full_name:string short_name:string image_cloud:string
