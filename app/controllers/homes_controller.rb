@@ -1,6 +1,6 @@
 class HomesController < ApplicationController
   def index
-    @home_projects = HomeProject.all
+    @home_projects = HomeProject.order(:photo_type_id)
   end
 
   def about
@@ -10,7 +10,7 @@ class HomesController < ApplicationController
   end
 
   def project_home
-  	@home_projects = HomeProject.all
+  	@home_projects = HomeProject.order(:photo_type_id)
   end
 
 end
