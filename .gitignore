@@ -17,3 +17,4 @@
 /tmp
 
 config/deploy.rb
+/.sass-cache
