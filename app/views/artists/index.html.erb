@@ -1,112 +1,77 @@
 <% content_for :body_class, "section-artists page-artists site-responsive responsive-top-size-1023 responsive-nav-standard responsive-nav-side-position-left analytics-track-all-links no-page-params nopopups" %>
 <% content_for :title, "Models | "%>
-
-
 <div id="main_content" class="clearwithin">
-            <!--contentstart-->
-            <div class="subsection-artists-list">
-
-                <div class="artists-header heading_wrapper clearwithin">
-                    <h1>Artists</h1>
-                </div>
-        
-
-
-            
-
-
-<!-- start content -->
-<div id="content" class="clearwithin">
-
-    <div id="artist_list_selector" class="navigation">
-        <div class="inner">
-            <ul class="clearwithin">
-                <li id="work_by" class="active"><a href="#">Models</a></li>
-            </ul>
-            <div class="subnav-border"></div>
-        </div>
+  <!--contentstart-->
+  <div class="subsection-artists-list">
+    <div class="artists-header heading_wrapper clearwithin">
+      <h1>Artists</h1>
     </div>
-
-    <div class="subsection-artist-list-preview-letters">
-
+    <!-- start content -->
+    <div id="content" class="clearwithin">
+      <div id="artist_list_selector" class="navigation">
+        <div class="inner">
+          <ul class="clearwithin">
+            <li id="work_by" class="active"><a href="#">Models</a></li>
+          </ul>
+          <div class="subnav-border"></div>
+        </div>
+      </div>
+      <div class="subsection-artist-list-preview-letters">
         <div id="content_module" class="clearwithin">
-            
-
-            <div class="artist-list-buttons"></div>
-
-            <div class="artist-list-wrapper">
-                <div id="list_preview_navigation" class="records_list columns_list clearwithin">
-                    <div class="artist-list-inner">
-                        <ul class="clearwithin">
-
-
-
+          <div class="artist-list-buttons"></div>
+          <div class="artist-list-wrapper">
+            <div id="list_preview_navigation" class="records_list columns_list clearwithin">
+              <div class="artist-list-inner">
+                <ul class="clearwithin">
+                </ul>
+                <% array_uniq_letter = [] %>
+                <% @artists.each do |artist| %>
+                  <% array_uniq_letter << artist.short_name[0].upcase %>
+                <% end %>
+                <% array_uniq_letter.sort!.uniq! %>
+                <% i = 1 %>
+                <% array_uniq_letter.each do |letter|%>
+                  <ul class="clearwithin letter_group">
+                    <li class="letter_divider">
+                      <h2><%=letter%></h2>
+                    </li>
+                    <% @artists.each do |artist| %>
+                      <% if artist.short_name[0].upcase == letter %>
+                        <li class="work_by artist_name">
+                          <a href="<%=artist_path(artist.short_name)%>" data-index="<%=i%>" class="clearwithin">
+                                <span class="content">
                                     
+                                    <%=artist.full_name %>
+                                </span>
+                            </a>
+                        </li>
+                        <% i+=1 %>
+                   <% end %>
+                <% end %>
+                  </ul>
 
-
-                                        </ul>
-                                <% array_uniq_letter = [] %>
-                                <% @artists.each do |artist| %>
-                                    <% array_uniq_letter << artist.short_name[0].upcase %>
-                                <% end %>
-                                <% array_uniq_letter.sort!.uniq! %>
-
-                                <% i = 1 %>
-                                
-                              
-                                <% array_uniq_letter.each do |letter|%>
-                                    <ul class="clearwithin letter_group">
-                                        <li class="letter_divider"><h2><%=letter%></h2></li>
-                                 
-
-                                   <% @artists.each do |artist| %>
-                                      <% if artist.short_name[0].upcase == letter %>
-                                             <li class="work_by artist_name">
-                                                
-                                                <a href="<%=artist_path(artist.short_name)%>" data-index="<%=i%>" class="clearwithin">
-                                                    <span class="content">
-                                                        
-                                                        <%=artist.full_name %>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <% i+=1 %>
-                                       <% end %>
-                                    <% end %>
-                                      </ul>
-
-                                <% end %>
-                                    
-                                
-
-                                    
-
-
-                               
-
+            <% end %>
+                
                      </div>
                 </div>
             </div>
         </div>
 
  <div id="sidebar" class="clearwithin">
-            <div id="slider">
-                <div id="list_preview_slideshow" class="clearwithin">
-                        
-                             <% @artists.each do |artist| %>
-                                    <!-- <%=artist.full_name %>-->
-                                    <div class="image" data-index="0">
-                                         <a href="<%=artist_path(artist.short_name)%>">
-                                   
-                                        <div class="artist-slide" style="background-image:url(<%=artist.image_cloud%>);">
-                                        </div>
-                                    
-                                             </a>
-                                      </div>
-                                <% end %>           
-                      
+    <div id="slider">
+        <div id="list_preview_slideshow" class="clearwithin">             
+            <% @artists.each do |artist| %>
+                <!-- <%=artist.full_name %>-->
+                <div class="image" data-index="0">
+                    <a href="<%=artist_path(artist.short_name)%>">
+                    <div class="artist-slide" style="background-image:url(<%=artist.image_cloud%>);">
+                    </div>
+                
+                    </a>
                 </div>
-             </div>
+            <% end %>       
+        </div>
+    </div>
  </div>
 
         <div class="clear"></div>
@@ -117,46 +82,36 @@
 
 <div class="clear"></div>
 <div id="mobile_artist_list" class="inner">
-
-        <div class="records_list detail_list image_list grid clearwithin  None">
-
-            <% check_first = true %>
-            <% @artists.each do |artist| %>
-                <ul class="clearwithin">
-
-
+    <div class="records_list detail_list image_list grid clearwithin  None">
+        <% check_first = true %>
+        <% @artists.each do |artist| %>
+            <ul class="clearwithin">
+                <% if check_first == true %>
+                    <li class="work_by first">
+                <% else %>
+                    <li class="work_by ">
+                <% end %>
                         
-                        <% if check_first == true %>
-                            <li class="work_by first">
-                        <% else %>
-                            <li class="work_by ">
-                        <% end %>
-                            
-                            <a href="<%=artist_path(artist.short_name)%>">
-                                    <span class="image"><span>
-                                                    <img class="lazyload-list-image" data-src="<%=artist.image_cloud%>"
-                                                    alt="" />
-                                    </span></span>
-                            </a>
-                            <span class="content">
-                                <h2><%=artist.full_name %></h2>
-                                <a href="<%=artist_path(artist.short_name)%>">
-                                    <span class="link">
-                                        <span class="read_more_label">See more</span>
-                                    </span>
-                                </a>
-                            </span>
-
-
-                        </li>
-
-
-                </ul>
+                <a href="<%=artist_path(artist.short_name)%>">
+                    <span class="image"><span>
+                    <img class="lazyload-list-image" data-src="<%=artist.image_cloud%>"
+                    alt="" />
+                        </span></span>
+                    </a>
+                    <span class="content">
+                      <h2><%=artist.full_name %></h2>
+                      <a href="<%=artist_path(artist.short_name)%>">
+                        <span class="link">
+                          <span class="read_more_label">See more</span>
+                        </span>
+                      </a>
+                    </span>
+                  </li>
+            </ul>
                 <% check_first = false %>
-            <% end %>
-       </div>
-    </div>
-    <!--contentend-->
-
+              <% end %>
+            </div>
+          </div>
+          <!--contentend-->
         </div>
-    </div>
+      </div>

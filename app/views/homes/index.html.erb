@@ -1,66 +1,36 @@
- <% content_for :head do%>
+<% content_for :head do%>
   <%= javascript_include_tag 'jquery.fullPage.min' %>
- 
 <% end %>
 <!-- add other name for body class !! stylesheet_link_tag    'jquery.fullPage.css'  !! -->
 <% content_for :body_class, "section-home site-responsive responsive-top-size-1023 responsive-nav-standard responsive-nav-side-position-left analytics-track-all-links no-page-params nopopups"%>
 
-
-
-
 <div id="main_content" class="clearwithin">
-            <!--contentstart-->
-            
-
-
-
-
-
-<h1>Home</h1>
-<h1>Ольга Глазкина - Фотограф Ростов-на-Дону</h1>
-
-<div id="content" class="clearwithin">
-
-
-        
-
+    <!--contentstart-->
+    <div id="content" class="clearwithin">
         <div id="homepage-panels">
-            <div id="fullpage">
-
-                    
-
-                    
-                        <% @home_projects.each do |home_project| %>
-                            <div id="section<%=home_project.photo_type_id%>" class="slidesection" style="background-image:url(<%=home_project.image_cloud%>)">
-                                <i class="fa home-down-arrow fa-angle-down"></i>
-                                    <span class="image"><a href=""></a></span>
-     
-                                    <span class="content clearafter main_caption">
-                                        <span class="inner">
-                                            <span class="custom_caption">
-                                                    <a href="<%=project_path(home_project.short_photo_type)%>">
-                                                        <h2>
-                                                                <span class="h1_title mesh-text">'<%=home_project.title %>'</span><br/>
-                                                                <span class="h1_subtitle mesh-text"><%=home_project.photo_type%></span>
-                                                        </h2>
-                                                    </a>
-                                                    <span class="custom_text mesh-text"><p><span><%=home_project.date %></span></p></span>
-                                             </span>
-                                        </span>
-                                    </span>
-                            </div>
-
-
-                        <% end %>
-
-
-            </div>
+          <div id="fullpage">
+              <% @home_projects.each do |home_project| %>
+                  <div id="section<%=home_project.photo_type_id%>" class="slidesection" style="background-image:url(<%=home_project.image_cloud%>)">
+                      <i class="fa home-down-arrow fa-angle-down"></i>
+                      <span class="image"><a href=""></a></span>
+                      <span class="content clearafter main_caption">
+                          <span class="inner">
+                              <span class="custom_caption">
+                                  <a href="<%=project_path(home_project.short_photo_type)%>">
+                                      <h2>
+                                        <span class="h1_title mesh-text">'<%=home_project.title %>'</span><br/>
+                                        <span class="h1_subtitle mesh-text"><%=home_project.photo_type%></span>
+                                      </h2>
+                                  </a>
+                                  <span class="custom_text mesh-text"><p><span><%=home_project.date %></span></p></span>
+                               </span>
+                          </span>
+                      </span>
+                  </div>
+              <% end %>
+          </div>
         </div>
-
-
-        
-    
-</div>
+    </div>
 
 
 
@@ -68,23 +38,17 @@
         <div id="slideshow_pager_inner">
             <ul id="slidemenu">
                 <% @home_projects.each do |home_project| %>
-                    
                     <li class="pager-item <%if home_project.photo_type_id == 1%>active <%end%>" data-menuanchor="slide<%=home_project.photo_type_id %>">
                         <a href="#slide<%=home_project.photo_type_id %>">
-                            <span class="dot"></span>
-                                <span class="preview-thumb"><img src="<%=home_project.image_cloud_thumb %>"/></span>
+                        <span class="dot"></span>
+                        <span class="preview-thumb">
+                          <img src="<%=home_project.image_cloud_thumb %>"/>
+                        </span>
                         </a>
                     </li>
-
                 <% end %>
-                    
-                   
             </ul>
         </div>
     </div>
-
-
- 
-            <!--contentend-->
-        </div>
-
+<!--contentend-->
+</div>
