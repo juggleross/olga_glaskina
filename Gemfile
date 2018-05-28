@@ -13,7 +13,6 @@ gem 'uglifier'
 gem 'coffee-rails'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-gem 'casein'
 gem 'yaml_db'
 
 # Use jquery as the JavaScript library
@@ -32,7 +31,7 @@ gem 'ffaker'
 
 # gem for run casein on digitalocean
 gem 'therubyracer'
-
+gem 'puma'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
