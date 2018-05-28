@@ -8,15 +8,15 @@
 
 # create home project
 HomeProject.create(photo_type_id: 1, title: 'Everything has beauty',photo_type: 'Portret',
-short_photo_type: 'portret', date: '23 JUN - 23 APR 2016', 
+short_photo_type: 'portret', date: '23 JUN - 23 APR 2016',
 image_cloud:'http://res.cloudinary.com/ddi25hb2u/image/upload/v1461181760/OlgaGlaskina/home/SfVJNC7qDIA.jpg',
 image_cloud_thumb: 'http://res.cloudinary.com/ddi25hb2u/image/upload/c_fill,h_90,w_90/v1461181760/OlgaGlaskina/home/SfVJNC7qDIA.jpg')
-HomeProject.create(photo_type_id: 2, title: 'IN THE BLINK OF AN EYE',photo_type: 'LOVE STORY', 
-short_photo_type: 'love_story', date: '8 JUN - 9 AUG 2016', 
+HomeProject.create(photo_type_id: 2, title: 'IN THE BLINK OF AN EYE',photo_type: 'LOVE STORY',
+short_photo_type: 'love_story', date: '8 JUN - 9 AUG 2016',
 image_cloud:'http://res.cloudinary.com/ddi25hb2u/image/upload/v1461182187/OlgaGlaskina/home/YmoCz7D8uH0.jpg',
 image_cloud_thumb: 'http://res.cloudinary.com/ddi25hb2u/image/upload/c_fill,g_south_west,h_90,w_90/v1461182187/OlgaGlaskina/home/YmoCz7D8uH0.jpg')
 HomeProject.create(photo_type_id: 3, title: 'Ability is nothing',photo_type: 'EXCLUSIVE',
-short_photo_type: 'exclusive', date: '12 MAY - 15 JUL 2016', 
+short_photo_type: 'exclusive', date: '12 MAY - 15 JUL 2016',
 image_cloud:'http://res.cloudinary.com/ddi25hb2u/image/upload/v1461181575/OlgaGlaskina/home/LPuQ492q7pY.jpg',
 image_cloud_thumb: 'http://res.cloudinary.com/ddi25hb2u/image/upload/c_fill,h_90,w_90/v1461181575/OlgaGlaskina/home/LPuQ492q7pY.jpg')
 
@@ -144,7 +144,3 @@ Project.create(artwork_id: 304, global_name: 'titovets',photo_name: "Vika Titove
 image_cloud: "http://res.cloudinary.com/ddi25hb2u/image/upload/v1460416665/Alina%20Lyubko/titovets/qIQ12RG4t6g.jpg")
 Project.create(artwork_id: 305, global_name: 'titovets',photo_name: "Vika Titovets",
 image_cloud: "http://res.cloudinary.com/ddi25hb2u/image/upload/v1460416639/Alina%20Lyubko/titovets/sb7Xx-1uni4.jpg")
-
-
-
-

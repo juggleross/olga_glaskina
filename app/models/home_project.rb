@@ -1,3 +1,3 @@
-class HomeProject < ActiveRecord::Base
+class HomeProject < ApplicationRecord
   validates :short_photo_type, uniqueness: true
 end
