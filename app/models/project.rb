@@ -1,3 +1,3 @@
-class Project < ActiveRecord::Base
+class Project < ApplicationRecord
   validates :image_cloud, uniqueness: true
 end

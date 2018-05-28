@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -14,54 +13,54 @@
 ActiveRecord::Schema.define(version: 20160422130441) do
 
   create_table "artists", force: :cascade do |t|
-    t.string   "full_name"
-    t.string   "short_name"
-    t.string   "image_cloud"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.string "full_name"
+    t.string "short_name"
+    t.string "image_cloud"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "casein_admin_users", force: :cascade do |t|
-    t.string   "login",                           null: false
-    t.string   "name"
-    t.string   "email"
-    t.integer  "access_level",        default: 0, null: false
-    t.string   "crypted_password",                null: false
-    t.string   "password_salt",                   null: false
-    t.string   "persistence_token"
-    t.string   "single_access_token"
-    t.string   "perishable_token"
-    t.integer  "login_count",         default: 0, null: false
-    t.integer  "failed_login_count",  default: 0, null: false
+    t.string "login", null: false
+    t.string "name"
+    t.string "email"
+    t.integer "access_level", default: 0, null: false
+    t.string "crypted_password", null: false
+    t.string "password_salt", null: false
+    t.string "persistence_token"
+    t.string "single_access_token"
+    t.string "perishable_token"
+    t.integer "login_count", default: 0, null: false
+    t.integer "failed_login_count", default: 0, null: false
     t.datetime "last_request_at"
     t.datetime "current_login_at"
     t.datetime "last_login_at"
-    t.string   "current_login_ip"
-    t.string   "last_login_ip"
-    t.string   "time_zone"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string "current_login_ip"
+    t.string "last_login_ip"
+    t.string "time_zone"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "home_projects", force: :cascade do |t|
-    t.string   "title"
-    t.string   "photo_type"
-    t.string   "short_photo_type"
-    t.string   "date"
-    t.string   "image_cloud"
-    t.string   "image_cloud_thumb"
-    t.integer  "photo_type_id"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
+    t.string "title"
+    t.string "photo_type"
+    t.string "short_photo_type"
+    t.string "date"
+    t.string "image_cloud"
+    t.string "image_cloud_thumb"
+    t.integer "photo_type_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "projects", force: :cascade do |t|
-    t.integer  "artwork_id"
-    t.string   "global_name"
-    t.string   "photo_name"
-    t.string   "image_cloud"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.integer "artwork_id"
+    t.string "global_name"
+    t.string "photo_name"
+    t.string "image_cloud"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
