@@ -40,7 +40,7 @@
                         <li class="work_by artist_name">
                           <a href="<%=artist_path(artist.short_name)%>" data-index="<%=i%>" class="clearwithin">
                                 <span class="content">
-                                    
+
                                     <%=artist.full_name %>
                                 </span>
                             </a>
@@ -51,67 +51,21 @@
                   </ul>
 
             <% end %>
-                
+
                      </div>
                 </div>
             </div>
         </div>
 
- <div id="sidebar" class="clearwithin">
-    <div id="slider">
-        <div id="list_preview_slideshow" class="clearwithin">             
-            <% @artists.each do |artist| %>
-                <!-- <%=artist.full_name %>-->
-                <div class="image" data-index="0">
-                    <a href="<%=artist_path(artist.short_name)%>">
-                    <div class="artist-slide" style="background-image:url(<%=artist.image_cloud%>);">
-                    </div>
-                
-                    </a>
-                </div>
-            <% end %>       
-        </div>
-    </div>
- </div>
+
+        <%= render 'sidebar' %>
 
         <div class="clear"></div>
     </div>
 
-</div>
-<!-- end content -->
+    </div>
 
-<div class="clear"></div>
-<div id="mobile_artist_list" class="inner">
-    <div class="records_list detail_list image_list grid clearwithin  None">
-        <% check_first = true %>
-        <% @artists.each do |artist| %>
-            <ul class="clearwithin">
-                <% if check_first == true %>
-                    <li class="work_by first">
-                <% else %>
-                    <li class="work_by ">
-                <% end %>
-                        
-                <a href="<%=artist_path(artist.short_name)%>">
-                    <span class="image"><span>
-                    <img class="lazyload-list-image" data-src="<%=artist.image_cloud%>"
-                    alt="" />
-                        </span></span>
-                    </a>
-                    <span class="content">
-                      <h2><%=artist.full_name %></h2>
-                      <a href="<%=artist_path(artist.short_name)%>">
-                        <span class="link">
-                          <span class="read_more_label">See more</span>
-                        </span>
-                      </a>
-                    </span>
-                  </li>
-            </ul>
-                <% check_first = false %>
-              <% end %>
-            </div>
-          </div>
-          <!--contentend-->
-        </div>
-      </div>
+    <div class="clear"></div>
+    <%= render 'artists/mobile/mobile_artist_list' %>
+  </div>
+</div>

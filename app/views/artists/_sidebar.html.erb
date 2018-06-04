@@ -1,0 +1,13 @@
+<div id="sidebar" class="clearwithin">
+   <div id="slider">
+       <div id="list_preview_slideshow" class="clearwithin">
+           <% @artists.each do |artist| %>
+               <div class="image" data-index="0">
+                   <a href="<%= artist_path(artist.short_name) %>">
+                     <div class="artist-slide" style="background-image:url(<%=artist.image_cloud%>);"></div>
+                   </a>
+               </div>
+           <% end %>
+       </div>
+   </div>
+</div>
