@@ -1,5 +1,5 @@
 module ArtistsHelper
 	def first_letters_from_name_set(artists)
-	  artists.map {|artist| artist.short_name[0].upcase }.uniq.sort
+	  artists.map { |artist| artist.first_latter_from_name }.uniq.sort
 	end
 end

@@ -58,17 +58,17 @@ Project.create(artwork_id: 305, global_name: 'love_story',photo_name: "#{FFaker:
 image_cloud: "http://res.cloudinary.com/ddi25hb2u/image/upload/v1460379201/Alina%20Lyubko/pM1HnVnnJdM.jpg")
 
 # create artist main page
-Artist.create(full_name: 'Alice Chernavskii', short_name: 'chernavskii',
+Artist.create(full_name: 'Alice Chernavskii',
  image_cloud: "http://res.cloudinary.com/ddi25hb2u/image/upload/v1460410537/Alina%20Lyubko/luPnorb9VBs.jpg")
-Artist.create(full_name: 'Glafira Glafirovka', short_name: 'glafirovka',
+Artist.create(full_name: 'Glafira Glafirovka',
  image_cloud: "http://res.cloudinary.com/ddi25hb2u/image/upload/v1460410687/Alina%20Lyubko/-mpx8ME7J7s.jpg")
-Artist.create(full_name: 'Dan Sirotkin', short_name: 'sirotkin',
+Artist.create(full_name: 'Dan Sirotkin',
  image_cloud: "http://res.cloudinary.com/ddi25hb2u/image/upload/v1460410768/Alina%20Lyubko/7K9CxD4h9ZA.jpg")
-Artist.create(full_name: 'Hanna Khodas', short_name: 'khodas',
+Artist.create(full_name: 'Hanna Khodas',
  image_cloud: "http://res.cloudinary.com/ddi25hb2u/image/upload/v1460410870/Alina%20Lyubko/05RGoapGJfg.jpg")
-Artist.create(full_name: 'Christina Bartos', short_name: 'bartos',
+Artist.create(full_name: 'Christina Bartos',
  image_cloud: "http://res.cloudinary.com/ddi25hb2u/image/upload/v1460377635/Alina%20Lyubko/DM58SAE7lOA.jpg")
-Artist.create(full_name: 'Vika Titovets', short_name: 'titovets',
+Artist.create(full_name: 'Vika Titovets',
  image_cloud: "http://res.cloudinary.com/ddi25hb2u/image/upload/v1460416597/Alina%20Lyubko/titovets/0TdzvZMSOMY.jpg")
 
 # create artist for every

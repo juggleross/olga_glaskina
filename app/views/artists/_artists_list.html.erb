@@ -8,11 +8,11 @@
         <h2><%= main_letter %></h2>
       </li>
       <% @artists.each do |artist| %>
-        <% if artist.short_name[0].upcase == main_letter %>
+        <% if artist.first_latter_from_name == main_letter %>
           <li class="work_by artist_name">
               <a href="<%=artist_path(artist.short_name)%>" data-index="<%= i %>" class="clearwithin">
                   <span class="content">
-                      <%=artist.full_name %>
+                      <%= artist.full_name %>
                   </span>
               </a>
           </li>
