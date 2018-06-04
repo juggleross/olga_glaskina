@@ -1,0 +1,15 @@
+<div class="artworks-slideshow">
+  <div class="slick-artworks" style="width:100%; margin: 0; padding: 0;" >
+    <% @artworks.each do |artwork| %>
+      <div class="slick-item" data-caption="<span class='artist'><strong><%=artwork.global_name.capitalize %></strong></span>, <span class='title'><em><%= artwork.photo_name %></em></span>, © <%=artwork.global_name.capitalize %> Archive" style="margin:0 16px;">
+        <a href="<%= artwork.image_cloud %>" class="slick_image_popup" data-slick-index="" data-fancybox-title="<div class='artist'><span class='artist'><strong><%= artwork.photo_name%></strong></span></div>
+        <div class='copyright'>© <%=artwork.global_name.capitalize%> Archive</div>
+        " data-zoomimage="<%= artwork.image_cloud %>" rel="group">
+        <img src="/assets/shim.png" class="slideshow-img " data-shop_button="" data-lazy="<%= artwork.image_cloud %>" data-artwork_id="<%=artwork.artwork_id %>" data-artwork_path="artworks_standalone/<%=artwork.artwork_id %>" <% size_image = FastImage.size(artwork.image_cloud) %><% if size_image[0]>size_image[1] %> data-imgwidth="2000" data-imgheight="1398" <% else %> data-imgwidth="1398" data-imgheight="2000" <% end %>alt="<div class='artist'><span class='artist'><strong><%=artwork.global_name.capitalize %></strong></span></div>
+          "/>
+        </a>
+        <div class="slideshade"></div>
+      </div>
+    <% end %>
+  </div>
+</div>

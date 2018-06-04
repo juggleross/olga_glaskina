@@ -16,50 +16,17 @@
           <div class="subnav-border"></div>
         </div>
       </div>
+  
       <div class="subsection-artist-list-preview-letters">
         <div id="content_module" class="clearwithin">
           <div class="artist-list-buttons"></div>
           <div class="artist-list-wrapper">
             <div id="list_preview_navigation" class="records_list columns_list clearwithin">
-              <div class="artist-list-inner">
-                <ul class="clearwithin">
-                </ul>
-                <% array_uniq_letter = [] %>
-                <% @artists.each do |artist| %>
-                  <% array_uniq_letter << artist.short_name[0].upcase %>
-                <% end %>
-                <% array_uniq_letter.sort!.uniq! %>
-                <% i = 1 %>
-                <% array_uniq_letter.each do |letter|%>
-                  <ul class="clearwithin letter_group">
-                    <li class="letter_divider">
-                      <h2><%=letter%></h2>
-                    </li>
-                    <% @artists.each do |artist| %>
-                      <% if artist.short_name[0].upcase == letter %>
-                        <li class="work_by artist_name">
-                          <a href="<%=artist_path(artist.short_name)%>" data-index="<%=i%>" class="clearwithin">
-                                <span class="content">
-
-                                    <%=artist.full_name %>
-                                </span>
-                            </a>
-                        </li>
-                        <% i+=1 %>
-                   <% end %>
-                <% end %>
-                  </ul>
-
-            <% end %>
-
-                     </div>
-                </div>
+              <%= render 'artists_list' %>
             </div>
+          </div>
         </div>
-
-
         <%= render 'sidebar' %>
-
         <div class="clear"></div>
     </div>
 
