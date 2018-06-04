@@ -1,0 +1,24 @@
+<div class="artist-list-inner">
+  <ul class="clearwithin">
+  </ul>
+  <% i = 1 %>
+  <% first_letters_from_name_set(@artists).each do |main_letter|%>
+    <ul class="clearwithin letter_group">
+      <li class="letter_divider">
+        <h2><%= main_letter %></h2>
+      </li>
+      <% @artists.each do |artist| %>
+        <% if artist.short_name[0].upcase == main_letter %>
+          <li class="work_by artist_name">
+              <a href="<%=artist_path(artist.short_name)%>" data-index="<%= i %>" class="clearwithin">
+                  <span class="content">
+                      <%=artist.full_name %>
+                  </span>
+              </a>
+          </li>
+          <% i += 1 %>
+      <% end %>
+    <% end %>
+    </ul>
+  <% end %>
+</div>
