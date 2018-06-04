@@ -1,0 +1,12 @@
+<div id="mobile_artist_list" class="inner">
+  <div class="records_list detail_list image_list grid clearwithin  None">
+    <% @artists.each_with_index do |artist, index| %>
+      <ul class="clearwithin">
+        <li class="work_by <%= 'first' if index.zero? %>">
+          <%= render partial: 'artists/mobile/image', locals: { artist: artist } %>
+          <%= render partial: 'artists/mobile/content', locals: { artist: artist } %>
+        </li>
+      </ul>
+    <% end %>
+  </div>
+</div>
