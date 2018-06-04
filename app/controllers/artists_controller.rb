@@ -4,6 +4,6 @@ class ArtistsController < ApplicationController
   end
 
   def index
-    @artists = ArtistDecorator.decorate_collection(Artist.order(:short_name))
+    @artists = ArtistDecorator.decorate_collection(Artist.all)
   end
 end
