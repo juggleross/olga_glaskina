@@ -3,14 +3,11 @@ class HomesController < ApplicationController
     @home_projects = HomeProject.order(:photo_type_id)
   end
 
-  def about
-  end
+  def about; end
 
-  def contact
-  end
+  def contact; end
 
   def project_home
     @home_projects = HomeProject.order(:photo_type_id)
   end
-
 end
