@@ -144,3 +144,4 @@ Project.create(artwork_id: 304, global_name: 'titovets',photo_name: "Vika Titove
 image_cloud: "http://res.cloudinary.com/ddi25hb2u/image/upload/v1460416665/Alina%20Lyubko/titovets/qIQ12RG4t6g.jpg")
 Project.create(artwork_id: 305, global_name: 'titovets',photo_name: "Vika Titovets",
 image_cloud: "http://res.cloudinary.com/ddi25hb2u/image/upload/v1460416639/Alina%20Lyubko/titovets/sb7Xx-1uni4.jpg")
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
