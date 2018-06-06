@@ -34,27 +34,27 @@ Project.create(artwork_id: 105, global_name: 'portret',photo_name: 'Ketrin Strik
 image_cloud: "http://res.cloudinary.com/ddi25hb2u/image/upload/v1460374440/gl-5UhFmhV0_i6igrz.jpg")
 
 # create projects - Exclusive
-Project.create(artwork_id: 201, global_name: 'exclusive',photo_name: FFaker::Name.name,
+Project.create(artwork_id: 201, global_name: 'exclusive',photo_name: Faker::Name.name,
 image_cloud: "http://res.cloudinary.com/ddi25hb2u/image/upload/v1460222192/Alina%20Lyubko/h9gqlv_In-E.jpg")
-Project.create(artwork_id: 202, global_name: 'exclusive',photo_name: FFaker::Name.name,
+Project.create(artwork_id: 202, global_name: 'exclusive',photo_name: Faker::Name.name,
 image_cloud: "http://res.cloudinary.com/ddi25hb2u/image/upload/v1460377635/Alina%20Lyubko/DM58SAE7lOA.jpg")
-Project.create(artwork_id: 203, global_name: 'exclusive',photo_name: FFaker::Name.name,
+Project.create(artwork_id: 203, global_name: 'exclusive',photo_name: Faker::Name.name,
 image_cloud: "http://res.cloudinary.com/ddi25hb2u/image/upload/v1460377609/Alina%20Lyubko/sJuW1jHdgVY.jpg")
-Project.create(artwork_id: 204, global_name: 'exclusive',photo_name: FFaker::Name.name,
+Project.create(artwork_id: 204, global_name: 'exclusive',photo_name: Faker::Name.name,
 image_cloud: "http://res.cloudinary.com/ddi25hb2u/image/upload/v1460223112/Alina%20Lyubko/CzrCpGavpss.jpg")
-Project.create(artwork_id: 205, global_name: 'exclusive',photo_name: FFaker::Name.name,
+Project.create(artwork_id: 205, global_name: 'exclusive',photo_name: Faker::Name.name,
 image_cloud: "http://res.cloudinary.com/ddi25hb2u/image/upload/v1460377666/Alina%20Lyubko/PAU47o_iq9Y.jpg")
 
 # create projects - Love story
-Project.create(artwork_id: 301, global_name: 'love_story',photo_name: "#{FFaker::Name.name} and #{FFaker::Name.name}",
+Project.create(artwork_id: 301, global_name: 'love_story',photo_name: "#{Faker::Name.name} and #{Faker::Name.name}",
 image_cloud: "http://res.cloudinary.com/ddi25hb2u/image/upload/v1460223697/Alina%20Lyubko/IsGJk3ehxl8.jpg")
-Project.create(artwork_id: 302, global_name: 'love_story',photo_name: "#{FFaker::Name.name} and #{FFaker::Name.name}",
+Project.create(artwork_id: 302, global_name: 'love_story',photo_name: "#{Faker::Name.name} and #{Faker::Name.name}",
 image_cloud: "http://res.cloudinary.com/ddi25hb2u/image/upload/v1460378909/Alina%20Lyubko/QevowddQQ_Q.jpg")
-Project.create(artwork_id: 303, global_name: 'love_story',photo_name: "#{FFaker::Name.name} and #{FFaker::Name.name}",
+Project.create(artwork_id: 303, global_name: 'love_story',photo_name: "#{Faker::Name.name} and #{Faker::Name.name}",
 image_cloud: "http://res.cloudinary.com/ddi25hb2u/image/upload/v1460379067/Alina%20Lyubko/pnfaMtjLncU.jpg")
-Project.create(artwork_id: 304, global_name: 'love_story',photo_name: "#{FFaker::Name.name} and #{FFaker::Name.name}",
+Project.create(artwork_id: 304, global_name: 'love_story',photo_name: "#{Faker::Name.name} and #{Faker::Name.name}",
 image_cloud: "http://res.cloudinary.com/ddi25hb2u/image/upload/v1460379167/Alina%20Lyubko/EJ7oWqdt92M.jpg")
-Project.create(artwork_id: 305, global_name: 'love_story',photo_name: "#{FFaker::Name.name} and #{FFaker::Name.name}",
+Project.create(artwork_id: 305, global_name: 'love_story',photo_name: "#{Faker::Name.name} and #{Faker::Name.name}",
 image_cloud: "http://res.cloudinary.com/ddi25hb2u/image/upload/v1460379201/Alina%20Lyubko/pM1HnVnnJdM.jpg")
 
 # create artist main page

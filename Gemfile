@@ -27,7 +27,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'fastimage', '1.8.1'
 
 gem 'colorize'
-gem 'ffaker'
+gem 'faker'
 
 # gem for run casein on digitalocean
 gem 'therubyracer'
