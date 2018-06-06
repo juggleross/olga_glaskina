@@ -37,6 +37,8 @@ gem 'draper'
 gem 'devise'
 gem 'activeadmin', github: 'activeadmin'
 gem 'arctic_admin'
+
+gem 'meta-tags'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
