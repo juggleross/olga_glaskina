@@ -12,31 +12,12 @@
 
 ActiveRecord::Schema.define(version: 20180604151705) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "artists", force: :cascade do |t|
     t.string "full_name"
     t.string "image_cloud"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "casein_admin_users", force: :cascade do |t|
-    t.string "login", null: false
-    t.string "name"
-    t.string "email"
-    t.integer "access_level", default: 0, null: false
-    t.string "crypted_password", null: false
-    t.string "password_salt", null: false
-    t.string "persistence_token"
-    t.string "single_access_token"
-    t.string "perishable_token"
-    t.integer "login_count", default: 0, null: false
-    t.integer "failed_login_count", default: 0, null: false
-    t.datetime "last_request_at"
-    t.datetime "current_login_at"
-    t.datetime "last_login_at"
-    t.string "current_login_ip"
-    t.string "last_login_ip"
-    t.string "time_zone"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

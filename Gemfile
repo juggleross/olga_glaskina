@@ -55,7 +55,7 @@ group :development do
 
   gem 'capistrano-rbenv'
   gem 'capistrano-passenger'
-  gem 'sqlite3'
+  gem 'pg'
   gem 'listen'
 end
 
