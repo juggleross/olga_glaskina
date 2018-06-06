@@ -4,6 +4,10 @@ ActiveAdmin.setup do |config|
   # Set the title that is displayed on the main layout
   # for each of the active admin pages.
   #
+  meta_tags_options = { viewport: 'width=device-width, initial-scale=1' }
+  config.meta_tags = meta_tags_options
+  config.meta_tags_for_logged_out_pages = meta_tags_options
+
   config.site_title = "Alina Lyubko"
 
   # Set the link url for the title. For example, to take
